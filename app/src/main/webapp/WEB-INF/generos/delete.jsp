@@ -3,18 +3,17 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
-        <title>Novo Gênero</title>
+        <title>Remover Gênero</title>
     </head>
     <body>
-        
         <h1>Novo Gênero</h1>
-        <form action="/generos/insert" method="post">
+        <p> Tem certeza que deseja deletar o genero ${genero.nome}</p>
+        <form action="/generos/delete" method="post">
+            <input type="hidden" name="id" value="${genero.id}"/>
             <div>
-                <label>Nome:</label>
-                <input type="text" name="nome" />
-            </div>
+            
             <a href="/generos/list">Voltar</a>
-            <button type="submit">Salvar</button>
+            <button type="submit">remover</button>
         </form>
     </body>
 </html>

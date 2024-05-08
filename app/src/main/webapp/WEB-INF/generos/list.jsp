@@ -5,11 +5,13 @@
     <head>
         <meta charset="UTF-8" />
         <title>Gêneros</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
     </head>
     <body>
+        <div claas container>
         <h1>Gêneros</h1>
-            <a href="/generos/insert">Novo Gênero</a>
-            <table>
+            <a href="/generos/insert" class="btn btn-primary">Novo Gênero</a>
+            <table class="table">
                 <tr>
                     <th>Id</th>
                     <th>Nome</th>
@@ -26,5 +28,6 @@
                     </tr>
                 </c:forEach>
             </table>
+            </div>
     </body>
 </html>
